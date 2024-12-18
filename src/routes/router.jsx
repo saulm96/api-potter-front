@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
-import Home from "./Home"
-import Wands from "./Wands"
-import Characters from "./Characters"
+import Home from "./home/Home"
+import Wands from "./wands/Wands"
+import Characters from "./characters/Characters"
 
 const router = createBrowserRouter([
   {

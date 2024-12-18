@@ -1,14 +1,21 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+
+import LoginModal from "../LoginModal/Modal";
 
 import "./navbar.css";
 export default function Nav() {
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+
+  const openModal = () => { setIsLoginModalOpen(true) };
+  const closeModal = () => { setIsLoginModalOpen(false) };
+
   return (
     <nav>
-      <img
-        src="../../assets/title-img.jpeg"
-        alt="Olivanders-logo"
-        className="navbar-img"
-      />
+      <div>
+      <h2>Olivanders</h2>
+      <p>Makers of Fine Wands since 382 BC</p>
+      </div>
       <ul className="navbar-router">
         <li className="navbar-home">
           <NavLink
@@ -44,29 +51,10 @@ export default function Nav() {
         </li>
       </ul>
 
-      <ul className="navbar-auth">
-        <li className="navbar-login">
-          <NavLink
-            to="/login"
-            className={({ isActive }) => {
-              return isActive ? "active" : "";
-            }}
-          >
-            <button className="btn-donate">Login</button>
-          </NavLink>
-        </li>
-
-        <li className="navbar-register">
-          <NavLink
-            to="/register"
-            className={({ isActive }) => {
-              return isActive ? "active" : "";
-            }}
-          >
-            <button className="btn-register">Register</button>
-          </NavLink>
-        </li>
-      </ul>
+      <div className="navbar-auth">
+            <button className="btn-login-register" onClick={openModal}> Login </button>
+            <LoginModal isOpen={isLoginModalOpen} onClose={closeModal} />
+      </div>
     </nav>
   );
 }
