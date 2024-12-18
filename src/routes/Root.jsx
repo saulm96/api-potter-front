@@ -2,7 +2,6 @@ import { Outlet, useLocation } from "react-router-dom";
 import NavBar from "../components/NavBar/NavBar";
 
 const Root = () => {
-  const location = useLocation();
 
   return (
     <>

@@ -1,3 +1,4 @@
+
 .modal {
     position: absolute;
     top: 0;
@@ -18,11 +19,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 40%;
+    height: 50%;
+    max-height: 50%;
     width: 35%;
-    background: -webkit-linear-gradient(180deg, #0f042f,#040113,#000000);
-    background: linear-gradient(180deg, #0f042f,#040113,#000000);
+    background: -webkit-linear-gradient(180deg, #0f042f, #040113, #000000);
+    background: linear-gradient(180deg, #0f042f, #040113, #000000);
     color: rgb(208, 236, 252);
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.modal-img{
+    width: 20rem;
+    transform: rotate(35deg);
+    position:absolute;
+    left: -10rem;
+    top: -1.5rem;
+    z-index: -1;
 }
 
 .modal-header {
@@ -32,13 +46,35 @@
     position: relative;
     width: 100%;
 }
-.modal-header p{
+
+.modal-header p {
     margin-top: 0.5rem;
 }
 
-.close-button {
-    align-self:flex-end;
+
+.close-button,
+.close-button:focus {
+    align-self: flex-end;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(100, 80, 170), rgb(50, 30, 170)); /* Colores más oscuros */
+    border: 2px solid rgb(20, 20, 20); /* Color más oscuro */
+    box-shadow: 0px 1px 6px 0px rgb(50, 30, 170); /* Color más oscuro */
+    transform: translate(0, -3px);
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: linear;
+    color: rgba(208, 236, 252, 1);
+
 }
+.close-button:hover {
+    transform: translate(0, -5px);
+}
+.close-button:active {
+    transform: translate(0, 0);
+}
+
 
 .modal-body {
     display: flex;
@@ -59,41 +95,21 @@
 .modal-login-buttons p {
     cursor: pointer;
     border-bottom: 1px solid rgb(208, 236, 252);
+    margin-top: 1.5rem;
     padding-bottom: 1rem;
     width: 80%;
     text-align: center;
 }
-.modal-login-buttons p:hover{
+
+.modal-login-buttons p:hover {
     /*Transicion de color*/
-    transition: 0.5s;
-    color: rgb(137, 206, 247);
-    border-bottom: 1px solid rgb(137, 206, 247);
+    color: rgb(90, 60, 220);
+    border-bottom: 2px solid rgb(90, 60, 220) !important;
 }
 
-.modal-login-form{
-    gap: 1rem;
-    width: 100%;
-    margin-top: 1.5rem;
+
+.login-section-active {
+    color: rgb(90, 60, 220);
+    border-bottom: 2px solid rgb(90, 60, 220) !important;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-}
-
-.input-container input{
-    height: 2rem;
-    text-align: center;
-    width: 15rem;
-    background-color: rgb(2, 9, 27);
-    color: rgb(208, 236, 252);
-}
-
-.login-button{
-    cursor: pointer;
-    width: 8rem;
-    height: 2rem;
-}

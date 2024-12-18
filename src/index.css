@@ -4,3 +4,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/*Delete the marker from the number input in webkit and mozila based */
+/*Webkit based browsers*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+/* Firefox based browsers*/
+input[type=number] { 
+    -moz-appearance: textfield; 
+    
+}
