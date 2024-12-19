@@ -1,7 +1,7 @@
 import React from "react";
 
-import LoginForm from "./Login/LoginForm";
-import CreateAcountForm from "./Register/CreateAcountForm";
+import LoginForm from "./LoginSection/LoginForm";
+import CreateAcountForm from "./RegisterSection/CreateAcountForm";
 
 import "./modal.css";
 

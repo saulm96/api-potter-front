@@ -2,7 +2,7 @@ import "./createAcountForm.css";
 
 const CreateAcountForm = () => {
   return (
-    <form className="createAcc-form" method="POST">
+    <form className="createAcc-form">
 
       <div className="createAcc-input-container">
         <input type="text" placeholder="Name" id="name" autoComplete="off"></input>
@@ -20,16 +20,16 @@ const CreateAcountForm = () => {
       </div>
 
       <div className="createAcc-input-container">
-        <input type="email" placeholder="Email" id="email" autoComplete="off"></input>
+        <input type="email" placeholder="Email" id="register-email" autoComplete="off"></input>
       </div>
 
       <div className="createAcc-input-password">
         <div className="createAcc-input-container">
-          <input type="password" placeholder="Password" id="password"></input>
+          <input type="password" placeholder="Password" id="register-password"></input>
         </div>
 
         <div className="createAcc-input-container">
-          <input type="password" placeholder="Confirm Password" id="confirmPassword"></input>
+          <input type="password" placeholder="Confirm Password" id="register-confirmPassword"></input>
         </div>
       </div>
 
