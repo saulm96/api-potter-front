@@ -1,12 +1,12 @@
 import LoginButton from "../Login/LoginButton/LoginButton";
-import DropdownMenu from "../DropDownMenu/DropDownMenu";
+import DropdownSectionMenu from "../DropDownSectionMenu/DropDownSectionsMenu";
 
 import "./navbar.css";
 export default function Nav() {
 
   return (
     <nav id="navBar">
-      <DropdownMenu />
+      <DropdownSectionMenu />
       <LoginButton />
     </nav>
   );

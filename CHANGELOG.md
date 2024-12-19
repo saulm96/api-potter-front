@@ -10,6 +10,12 @@ Started working in the drop down menu who contains the routes for the general us
 TO DO LIST:
 Priorities ordered from lowest to highest. The higher the number, the higher the priority:
 
-(3) Animate and finish the drop down menu
-(1) Last style details in login/register form
+(3) ==>
+Animate and finish the drop down menu
+
+
+
+(1)==>
+ --Last style details in login/register form.
+ There is a visual bug while clicking the main login button. It scales only in the bottom instead of doing the animation of being clicked.
 

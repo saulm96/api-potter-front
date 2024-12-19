@@ -53,11 +53,11 @@ button {
     width: 50%;
 }
 
-.dropdown-toggle:hover {
+.dropdown-toggle.clicked {
     transform: rotate(-90deg);
 }
 
-.dropdown-toggle:hover span {
+.dropdown-toggle.clicked span {
     width: .25rem;
     transform: translateX(10px);
     background-color: rgb(30, 0, 36);
