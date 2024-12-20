@@ -9,6 +9,10 @@ Started working on the dropdown menu that contains routes for general users. The
 2024/12/19
 With only a few finishing touches left, I’ve moved the dropdown button and the login modal to Tier 1 priority. I will now start working on the title and structure of the Landing Page.
 
+2024/12/20
+Created a title with a temporary image and animated to appear from outside the screen.
+I will add a box a little bit under the middle of the screen to invite the user to star scrolling.
+
 
 
 TO-DO LIST:
