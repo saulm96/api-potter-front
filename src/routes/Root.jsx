@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import NavBar from "../components/NavBar/NavBar";
 
 const Root = () => {
@@ -6,11 +6,9 @@ const Root = () => {
   return (
     <>
       <header>
-        <NavBar />
+        <NavBar/>
       </header>
-      <main>
         <Outlet />
-      </main>
       <footer>
         <p>©️Copyright </p>
       </footer>

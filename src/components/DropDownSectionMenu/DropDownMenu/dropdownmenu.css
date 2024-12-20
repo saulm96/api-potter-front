@@ -14,6 +14,7 @@
     border-radius: 5% 10% 20% 10%;
 
     animation: slideDown 0.5s ease-in-out;
+    z-index: 998;
 }
 
 @keyframes slideDown {

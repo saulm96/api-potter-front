@@ -11,14 +11,14 @@ const DropDownMenu = () => {
 
       <NavLink
         className={({ isActive }) => (isActive ? "active" : "")}
-        to="/Wands"
+        to="/wands"
       >
         Wands
       </NavLink>
 
       <NavLink
         className={({ isActive }) => (isActive ? "active" : "")}
-        to="/Characters"
+        to="/characters"
       >
         Characters
       </NavLink>

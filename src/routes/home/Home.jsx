@@ -1,9 +1,11 @@
+import LandingPageTitle from "../../components/LandingPageTitle/LandingPageTitle";
+
 import "./home.css"
 
 export default function Home() {
     return (
-        <div>
-            <h1>Home</h1>
-        </div>
+        <section className="welcome-section">
+            <LandingPageTitle/>
+        </section>
     );
 }

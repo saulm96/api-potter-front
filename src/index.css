@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background-color: rgba(10, 10, 10, 0.9);;
+}
+
 /*Delete the marker from the number input in webkit and mozila based */
 /*Webkit based browsers*/
 input[type=number]::-webkit-inner-spin-button, 
