@@ -22,3 +22,20 @@ height: 5vh;
     transform: translate(0, 0);
     border-bottom: 2px solid rgb(30, 30, 30);
 }
+
+.login-btn.lp{
+    margin-top: 1vw;
+    margin-right: 1vw;
+    animation: fadeIn 2s ease-in-out;
+    align-self: self-end;
+    z-index: 10;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
