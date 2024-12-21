@@ -20,6 +20,7 @@ const LandingPageTitle = () => {
         />
         <div className="title-holder"></div>
       </div>
+
     </>
   );
 };

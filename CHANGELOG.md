@@ -1,3 +1,28 @@
+
+
+# TO-DO LIST:
+Priorities ordered from lowest to highest (the higher the number, the higher the priority):
+
+## Nav bar/ Drop down menu:
+- (1)
+    - Animate and finalize the dropdown menu ✅
+    - The final styles for the button still need to be decided. For now, it will be a square, but it will probably need to change in the future.
+
+## Login/Register button:
+- (1): 
+    - Fix the last style details in the login/register form.
+    There is a visual bug when clicking the main login button: it scales only at the bottom instead of performing the proper click animation.
+
+    - Still have to check adaptability to different sizes on screen. It is fixed in theory but would be better to double check in different devices, the problem was with the height
+of the modal.
+
+## Welcome section styles:
+- (1)
+    - Find a way to make the circle look more like a sphere would be better.
+    - Find a better Logo to show inside.
+
+---
+
 2024/12/17
 Basic navigation and footer completed. Started working on the modal for login/register (it won't be functional for now, just focusing on creating the components).
 
@@ -11,19 +36,4 @@ With only a few finishing touches left, I’ve moved the dropdown button and the
 
 2024/12/20
 Created a title with a temporary image and animated to appear from outside the screen.
-I will add a box a little bit under the middle of the screen to invite the user to star scrolling.
-
-
-
-TO-DO LIST:
-Priorities ordered from lowest to highest (the higher the number, the higher the priority):
-
-(1) Nav bar Drop down menu:
-Animate and finalize the dropdown menu ✅
-The final styles for the button still need to be decided. For now, it will be a square, but it will probably need to change in the future.
-
-(1)Login/Register button:
-Fix the last style details in the login/register form.
-There is a visual bug when clicking the main login button: it scales only at the bottom instead of performing the proper click animation.
-Still have to check adaptability to different sizes on screen. It is fixed in theory but would be better to double check in different devices, the problem was with the height
-of the modal.
+I will add a text a little bit under the middle of the screen to invite the user to star scrolling.

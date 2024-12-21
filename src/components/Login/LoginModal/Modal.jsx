@@ -1,11 +1,20 @@
-import React from "react";
-
+import{useEffect} from "react";
 import LoginForm from "./LoginSection/LoginForm";
 import CreateAcountForm from "./RegisterSection/CreateAcountForm";
 
 import "./modal.css";
 
 const LoginModal = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    isOpen ?
+    document.body.style.overflow = "hidden" :
+    document.body.style.overflow = "auto";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
+    
   if (!isOpen) return null;
 
   const handleLoginButtonClick = (button) => {
